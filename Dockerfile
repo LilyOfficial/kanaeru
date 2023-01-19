@@ -10,7 +10,8 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install && npm start
+RUN npm install && npm install qrcode-terminal
+
 
 COPY . .
 
